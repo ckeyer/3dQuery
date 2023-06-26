@@ -2,8 +2,12 @@
 
 #include <QApplication>
 
+#include "common/debugLogger.h"
+
 int main(int argc, char *argv[])
 {
+    qInstallMessageHandler(debugLogger);
+
     QApplication a(argc, argv);
     MainWindow w;
     w.show();

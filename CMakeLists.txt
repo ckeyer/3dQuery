@@ -17,6 +17,8 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
+        common/debugLogger.cpp
+        common/debugLogger.h
         mainwindow.h
         mainwindow.ui
 )
